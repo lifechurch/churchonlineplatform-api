@@ -1,4 +1,4 @@
-churchonlineplatform-api
+Church Online Platform API Documentation
 ========================
 
-Church Online documentation for developers
+### Not yet complete
