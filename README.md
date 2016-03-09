@@ -124,3 +124,45 @@ http://*mychurch*.churchonline.org/api/v1/events
   }
 }
 ```
+
+### Upcoming Event Times
+Returns upcoming event times.
+
+#### URI
+http://*mychurch*.churchonline.org/api/v1/upcoming_event_times
+
+#### Example Response
+{
+  "meta":{
+    "status":200
+  },
+  "response":{
+    "count":3,
+    "items":[
+      {
+        "eventTimeId":123456,
+        "eventId":12345,
+        "eventTime":"2016-03-09T05:30:00.000Z",
+        "eventEndTime":"2016-03-09T06:37:00.000Z",
+        "eventTitle":"The Lion and the Lamb",
+        "eventTimeDoorsOpenOffset":30
+      },
+      {
+        "eventTimeId":123457,
+        "eventId":12345,
+        "eventTime":"2016-03-09T13:00:00.000Z",
+        "eventEndTime":"2016-03-09T14:07:00.000Z",
+        "eventTitle":"The Lion and the Lamb",
+        "eventTimeDoorsOpenOffset":15
+      },
+      {
+        "eventTimeId":123458,
+        "eventId":12345,
+        "eventTime":"2016-03-09T14:30:00.000Z",
+        "eventEndTime":"2016-03-09T15:37:00.000Z",
+        "eventTitle":"The Lion and the Lamb",
+        "eventTimeDoorsOpenOffset":30
+      }
+    ]
+  }
+}
