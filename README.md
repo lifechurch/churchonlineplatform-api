@@ -132,6 +132,7 @@ Returns upcoming event times.
 http://*mychurch*.churchonline.org/api/v1/upcoming_event_times
 
 #### Example Response
+```json
 {
   "meta":{
     "status":200
@@ -166,3 +167,4 @@ http://*mychurch*.churchonline.org/api/v1/upcoming_event_times
     ]
   }
 }
+```
