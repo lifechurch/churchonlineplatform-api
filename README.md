@@ -11,7 +11,7 @@ Returns the current event.
 #### URI
 http://*mychurch*.churchonline.org/api/v1/events/current
 
-#### Example Response
+#### Example Response (if there is a live event)
 ```json
 {
   "meta":{
@@ -23,6 +23,19 @@ http://*mychurch*.churchonline.org/api/v1/events/current
       "eventStartTime":"2016-03-09T03:39:00Z"
     }
   }
+}
+```
+
+#### Example Response (if there is no current live event)
+```json
+{
+  "meta":{
+    "status":404,
+    "errors":[
+      "The Event Time you're looking for could not be found"
+    ]
+  },
+  "response":null
 }
 ```
 
